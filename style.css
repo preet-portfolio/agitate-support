@@ -1,0 +1,49 @@
+:root {
+    --accent: #D9481F;
+    --bg: #EDEDEA;
+    --card: #FFFFFF;
+    --text: #1C1C1A;
+    --secondary: #6B6B66;
+    --border: #C8C8C3;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --accent: #F0683F;
+        --bg: #000000;
+        --card: #1C1C1E;
+        --text: #F5F5F7;
+        --secondary: #A1A1A6;
+        --border: #38383A;
+    }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 680px; margin: 0 auto; padding: 60px 24px; }
+.logo { text-align: center; margin-bottom: 32px; }
+.logo img { width: 80px; height: 80px; border-radius: 18px; }
+h1 { font-size: 2rem; font-weight: 700; text-align: center; letter-spacing: -0.02em; margin-bottom: 8px; }
+.subtitle { text-align: center; color: var(--secondary); font-size: 1.1rem; margin-bottom: 12px; }
+.updated { text-align: center; color: var(--secondary); font-size: 0.85rem; margin-bottom: 40px; }
+nav { text-align: center; margin-bottom: 40px; font-size: 0.95rem; }
+nav a { margin: 0 10px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin-bottom: 20px; }
+.card h2 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; letter-spacing: -0.01em; }
+.card p, .card li { color: var(--secondary); font-size: 0.95rem; line-height: 1.7; }
+.card p + p { margin-top: 10px; }
+.card ul { padding-left: 20px; margin-top: 8px; }
+.card li { margin-bottom: 6px; }
+.card strong { color: var(--text); font-weight: 600; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.contact-link {
+    display: block; padding: 14px 20px; background: var(--accent); color: white; border-radius: 12px;
+    text-align: center; font-weight: 600; font-size: 1rem; margin-top: 16px;
+}
+.contact-link:hover { opacity: 0.85; text-decoration: none; }
+.footer { text-align: center; color: var(--secondary); font-size: 0.85rem; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
